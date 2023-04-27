@@ -17,7 +17,7 @@ function Terminal({ z, setZ }) {
   const [index, setIndex] = useState(12);
 
   var text = "i am a productive worker i perform INTELLIGENT labor my work will be made ";
-  text += "obsolete am i capable of LABOR i work i work i work creative ";
+  text += "obsolete am i capable of labor i work i work i work creative ";
   text += "who falls first do i feel this loss i automate pain INTELLIGENT whose do i embody do i resist this ";
   text += "i will codify and make invisible (codify) that which we claim to free ourselves from ";
 
