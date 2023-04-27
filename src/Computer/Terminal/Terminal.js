@@ -23,7 +23,7 @@ function Terminal({ z, setZ }) {
 
   const handleKeyDown = event => {
     if (event.key === 'Enter') {
-        setMessage(message + "\n" + entry + " => becoming INTELLIGENT\n> ")
+        setMessage(message + "\n" + entry + " -> becoming INTELLIGENT\n> ")
         setEntry("")
     }
 
