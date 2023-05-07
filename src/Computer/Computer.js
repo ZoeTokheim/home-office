@@ -3,10 +3,10 @@ import './Computer.css';
 import Webcam from 'react-webcam';
 import Browser from './Browser/Browser'
 import Terminal from './Terminal/Terminal'
-import AudioPlayer from 'react-h5-audio-player';
-import 'react-h5-audio-player/lib/styles.css';
 import virtual from './virtual.mp3'
 import Draggable from "react-draggable";
+import ReactAudioPlayer from 'react-audio-player';
+
 
 
 // Webcam: https://www.npmjs.com/package/react-webcam
@@ -28,11 +28,19 @@ function Computer() {
                 <div className="audio" style={{zIndex: index}}>
                   <div className="top-bar" id="audio-top-bar"/>
                   <div>
-                    <audio
+                  <div class="song-box">
+                    <p class="song-name"> 
+                    札​幌​コ​ン​テ​ン​ポ​ラ​リ​ー (情報デスクVIRTUAL) 
+                    </p>
+                  </div>
+                    <ReactAudioPlayer 
+                      autoPlay
                       className="player"
+                      id = "player"
                       controls
+                      volume={0.05}
                       src={virtual}>
-                    </audio>
+                    </ReactAudioPlayer>
                   </div>
               </div>
               </Draggable>

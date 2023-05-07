@@ -20,7 +20,7 @@ function Browser({ z, setZ }) {
         <div className = "alfred-top-bar"> 
         <div className = "url">https://www.helloalfred.com/</div>
         </div>
-        <iframe className = "browser-window" src="https://helloalfred.com/"></iframe>
+        <iframe className = "browser-window" title="Alfred" src="https://helloalfred.com/"></iframe>
       </div>
     </div>
     </Draggable>

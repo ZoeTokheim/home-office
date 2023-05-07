@@ -1,7 +1,7 @@
 // Creating react app: https://create-react-app.dev/
 
 import './App.css';
-import React, { useState } from 'react';
+import React from 'react';
 import Computer from "./Computer/Computer";
 import Window from "./Window/Window";
 import plant from './plant.png';
@@ -11,7 +11,7 @@ function App() {
     <div className="App">
         <Computer/>
         <Window/>
-        <img className="plant" src={plant}/> 
+        <img className="plant" src={plant} alt="House plant."/> 
     </div>
   );
 }

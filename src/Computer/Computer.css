@@ -51,7 +51,7 @@
     position: absolute;
     left:530px;
     top:60px;
-    height:90px;
+    height:135px;
     width: 318px;
     border: solid;
     border-color: black;
@@ -61,5 +61,36 @@
 
 
 .player {
-    margin-top: 7px;
+    margin-top: 10px;
 }
+
+  
+.song-box {
+border-radius: 3px;
+overflow: clip;
+width: 88%;
+height: 23px;
+white-space: nowrap;
+margin: auto;
+text-overflow: clip;
+}
+
+.song-name {
+overflow: wrap;
+padding-top: 1px;
+opacity: .9;
+height: 20px;
+font-weight: bold;
+color: #926fb7;
+animation: rightToLeft 15.5s linear infinite;
+}
+
+@keyframes rightToLeft {
+0% {
+    transform: translateX(300px);
+}
+100% {
+    transform: translateX(-340px);
+}
+}
+
